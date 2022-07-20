@@ -41,7 +41,7 @@ export default class FilterQueryParser {
         try {
             this.parseQuery(query);
             if (!query || grammarUtils.isLastCharacterWhiteSpace(query)) {
-                return _.map(["AND", "OR"], f => { return { value: f, type: "literal" } });
+                return _.map(["AND"], f => { return { value: f, type: "literal" } });
             }
 
             return [];

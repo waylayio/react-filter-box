@@ -16,9 +16,10 @@ export default class SimpleResultProcessing extends BaseResultProcessing {
         var field = this.tryToGetFieldCategory(fieldOrLabel);
         switch (operator) {
             case "==": return row[field] == value;
-            case "!=": return row[field] != value;
-            case "contains": return row[field].toLowerCase().indexOf(value.toLowerCase()) >= 0;
-            case "!contains": return row[field].toLowerCase().indexOf(value.toLowerCase()) < 0;
+            case "<=": return row[field] <= value;
+            case ">": return row[field] < value;
+            case ">=": return row[field] >= value;
+            case "=>": return row[field] > value;
         }
 
         return false;
