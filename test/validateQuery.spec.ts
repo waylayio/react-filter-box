@@ -192,7 +192,7 @@ describe("#validateQuery", () => {
             ];
 
             var result = validateQuery(expression, autoCompleteHandler);
-            expect(result.isValid).to.be.true;
+            expect(result.isValid).to.be.false;
         });
 
         it("query with invalid nested condition should return isValid set to false", () => {
