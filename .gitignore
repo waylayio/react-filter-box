@@ -6,3 +6,4 @@ typings
 lib/*.map
 lib/**/*.d.ts
 .vscode
+yarn-error.log

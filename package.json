@@ -10,7 +10,8 @@
     "dist": "webpack --config webpack.prod.config.js --progress -p",
     "component-package": "webpack --config webpack.component.config.js --progress -p && npm run less",
     "less": "lessc ./src/ReactFilterBox.less ./lib/react-filter-box.css",
-    "prepublish": "npm run component-package"
+    "prepublish": "npm run component-package",
+    "version": "conventional-changelog -i CHANGELOG.md -s -r 0 -p @spyke/conventional-changelog-preset && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,7 @@
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
+    "@spyke/conventional-changelog-preset": "^1.0.5",
     "@types/chai": "^4.1.7",
     "@types/codemirror": "^0.0.70",
     "@types/enzyme": "^3.1.15",
@@ -55,6 +57,7 @@
     "babel-loader": "^8.2.4",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "chai": "^4.2.0",
+    "conventional-changelog-cli": "^2.2.2",
     "css-loader": "^1.0.1",
     "enzyme": "^3.7.0",
     "fixed-data-table": "^0.6.5",
