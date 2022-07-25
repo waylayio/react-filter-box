@@ -1,4 +1,4 @@
-const parser: ExtendedParser = require("./grammar.pegjs");
+const parser: ExtendedParser = require("./grammar");
 import * as PEG from "pegjs";
 import * as _ from "lodash";
 import BaseAutoCompleteHandler from "./BaseAutoCompleteHandler";
@@ -7,7 +7,6 @@ import grammarUtils from "./GrammarUtils";
 import { HintInfo } from "./models/ExtendedCodeMirror";
 import Expression from "./Expression";
 import ParsedError from "./ParsedError";
-
 export default class FilterQueryParser {
     autoCompleteHandler = new BaseAutoCompleteHandler();
     lastError: PEG.PegjsError = null;

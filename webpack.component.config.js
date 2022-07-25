@@ -1,5 +1,4 @@
 var path = require('path');
-var webpack = require('webpack');
 var _ = require("lodash");
 var commonConfig = require("./webpack.common.config");
 
@@ -8,7 +7,6 @@ var config = _.assign(commonConfig, {
   entry: [
     "./src/ReactFilterBox.tsx"
   ],
-
    externals: {
     react: {
       root: 'React',
@@ -23,8 +21,6 @@ var config = _.assign(commonConfig, {
       amd: 'react-dom',
     },
   },
-
-  
   output: {
     path: path.join(__dirname, 'lib'),
     filename: 'react-filter-box.js',

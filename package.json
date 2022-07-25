@@ -5,10 +5,8 @@
   "scripts": {
     "start": "node server.js",
     "lint": "tslint ./src/**/*.tsx?",
-    "test": "node --max-old-space-size=16000 ./node_modules/.bin/mocha-webpack --require ignore-styles -r jsdom-global/register --webpack-config webpack.test.config.js --watch \"./test/**/*.ts\"",
-    "test:windows": "node --max-old-space-size=16000 ./node_modules/mocha-webpack/bin/mocha-webpack --require ignore-styles -r jsdom-global/register --webpack-config webpack.test.config.js  --watch \"./test/**/*.ts\"",
-    "dist": "webpack --config webpack.prod.config.js --progress -p",
-    "component-package": "webpack --config webpack.component.config.js --progress -p && npm run less",
+    "test": "mocha --require ts-node/register test/**/*.spec.ts",
+    "component-package": "webpack --config webpack.component.config.js --progress && npm run less",
     "less": "lessc ./src/ReactFilterBox.less ./lib/react-filter-box.css",
     "prepublish": "npm run component-package",
     "version": "conventional-changelog -i CHANGELOG.md -s -r 0 -p @spyke/conventional-changelog-preset && git add CHANGELOG.md"
@@ -66,8 +64,7 @@
     "jsdom-global": "^3.0.2",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
-    "mocha": "^5.2.0",
-    "mocha-webpack": "^2.0.0-beta.0",
+    "mocha": "^10.0.0",
     "pegjs-loader": "^0.5.4",
     "react-day-picker": "^5.3.0",
     "react-hot-loader": "^4.3.12",
@@ -75,12 +72,13 @@
     "sinon": "^7.1.1",
     "style-loader": "^0.23.1",
     "ts-loader": "^6.2.1",
+    "ts-node": "^10.9.1",
     "tslint": "^5.17.0",
     "typescript": "^3.2.1",
-    "webpack": "4",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "3",
-    "webpack-node-externals": "^1.7.2"
+    "webpack": "5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "4.9.3",
+    "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
     "codemirror": "^5.42.0",

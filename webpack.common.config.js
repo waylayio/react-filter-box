@@ -9,11 +9,15 @@ module.exports = {
     rules: [
       {
         test: [/\.ts$/, /\.tsx$/],
-        loaders: ['ts-loader']
+        loader: 'ts-loader'
       },
       {
         test: [/\.less$/, /\.css$/],
-        loader: "style-loader!css-loader!less-loader"
+        use:[
+          {loader: 'style-loader'},
+          {loader: 'css-loader'},
+          {loader: 'less-loader'}
+        ] 
       },
       {
         test: /\.pegjs$/,
