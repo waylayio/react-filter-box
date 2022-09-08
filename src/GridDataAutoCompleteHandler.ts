@@ -47,7 +47,7 @@ export default class GridDataAutoCompleteHandler extends BaseAutoCompleteHandler
             return found.customOperatorFunc(parsedCategory);
         }
 
-        return ["==", ">", ">=", "<=", "<", "in", "ref"];
+        return ["=="];
     }
 
     needValues(parsedCategory: string, parsedOperator: string): any[] {
