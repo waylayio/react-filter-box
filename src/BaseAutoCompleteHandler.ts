@@ -69,7 +69,7 @@ export default class BaseAutoCompleteHandler {
         return []
     }
 
-    needOperators(lastOperator: string): string[] {
+    needOperators(lastOperator?: string): string[] {
         return []
     }
 

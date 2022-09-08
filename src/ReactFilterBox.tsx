@@ -12,6 +12,10 @@ import BaseResultProcessing from "./BaseResultProcessing";
 import BaseAutoCompleteHandler from "./BaseAutoCompleteHandler";
 import ParsedError from "./ParsedError";
 import validateQuery from "./validateQuery";
+import { countBy } from "lodash";
+
+const DOUBLE_QUOTE = '"';
+const SPACE = " ";
 
 export default class ReactFilterBox extends React.Component<any, any> {
   public static defaultProps: any = {
@@ -72,7 +76,7 @@ export default class ReactFilterBox extends React.Component<any, any> {
   onChange(query: string) {
     var validationResult = { isValid: true };
     var result: any;
-    if (query.indexOf(" ") === -1) {
+    if (this._isFilterableContent(query)) {
       this.setState({ isError: false });
       result = query;
     } else {
@@ -92,6 +96,37 @@ export default class ReactFilterBox extends React.Component<any, any> {
     }
 
     this.props.onChange(query, result, validationResult);
+  }
+
+  _isFilterableContent(query: string) {
+    return (
+      this._doesNotContainSpaces ||
+      this._isEnclosedInDoubleQuotes(query) ||
+      (this._doesNotContainDoubleQuotes(query) &&
+        this._doesNotContainOperators(query))
+    );
+  }
+
+  _doesNotContainSpaces(value: string) {
+    return value.indexOf(SPACE) === -1;
+  }
+
+  _doesNotContainDoubleQuotes(value: string) {
+    return value.indexOf(DOUBLE_QUOTE) === -1;
+  }
+
+  _isEnclosedInDoubleQuotes(value: string) {
+    return (
+      value.startsWith(DOUBLE_QUOTE) &&
+      value.endsWith(DOUBLE_QUOTE) &&
+      countBy(value)[DOUBLE_QUOTE] === 2
+    );
+  }
+
+  _doesNotContainOperators(query: string) {
+    return !this.parser.autoCompleteHandler
+      .needOperators()
+      .some((operator) => query.includes(` ${operator} `));
   }
 
   onBlur() {
