@@ -54,7 +54,7 @@ export default class ReactFilterBox extends React.Component<any, any> {
   onSubmit(query: string) {
     var validationResult = { isValid: true };
     var result = this.parser.parse(query);
-    if (query.indexOf(" ") === -1) {
+    if (this._isFilterableContent(query)) {
       this.setState({ isError: false });
     } else {
       if ((result as ParsedError).isError) {
@@ -100,7 +100,7 @@ export default class ReactFilterBox extends React.Component<any, any> {
 
   _isFilterableContent(query: string) {
     return (
-      this._doesNotContainSpaces ||
+      this._doesNotContainSpaces(query) ||
       this._isEnclosedInDoubleQuotes(query) ||
       (this._doesNotContainDoubleQuotes(query) &&
         this._doesNotContainOperators(query))
@@ -126,7 +126,9 @@ export default class ReactFilterBox extends React.Component<any, any> {
   _doesNotContainOperators(query: string) {
     return !this.parser.autoCompleteHandler
       .needOperators()
-      .some((operator) => query.includes(` ${operator} `));
+      .some((operator) =>
+        query.toLowerCase().includes(` ${operator.toLowerCase()} `)
+      );
   }
 
   onBlur() {
