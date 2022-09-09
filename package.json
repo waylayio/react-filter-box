@@ -1,6 +1,6 @@
 {
   "name": "@waylay/react-filter-box",
-  "version": "3.4.5",
+  "version": "3.4.6",
   "description": "Conditional filter supports OR/AND, bracket, Highlighting, Autocomplete, and high extensibility   ",
   "scripts": {
     "start": "node server.js",

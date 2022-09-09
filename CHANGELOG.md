@@ -1,3 +1,13 @@
+## [v3.4.6](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.5...v3.4.6) (2022-09-09)
+
+### :rocket: New Feature
+
+* add CODEOWNERS file ([486e01c](https://github.com/nhabuiduc/react-filter-box/commit/486e01caf98319eb6e004ff6e3332b8f0c78f9a5))
+
+### :bug: Bug Fix
+
+* allow spaces when validating searchable content ([#13](https://github.com/nhabuiduc/react-filter-box/issues/13)) ([bfd1a74](https://github.com/nhabuiduc/react-filter-box/commit/bfd1a743dacb51653f6a7f9453920e2ae42ab51c))
+* remove suggestion of paranthesis ([#12](https://github.com/nhabuiduc/react-filter-box/issues/12)) ([e927a39](https://github.com/nhabuiduc/react-filter-box/commit/e927a39e46f95959688fb6846779f66fb671c491))
 ## [v3.4.5](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.4...v3.4.5) (2022-07-25)
 
 ### :house: Internal
