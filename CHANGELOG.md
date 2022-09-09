@@ -1,3 +1,8 @@
+## [v3.4.7](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.6...v3.4.7) (2022-09-09)
+
+### :bug: Bug Fix
+
+* wrong condition on filterable content check ([d79873e](https://github.com/nhabuiduc/react-filter-box/commit/d79873e1a6959ac239dd3eadd44ee9a77a5f67ab))
 ## [v3.4.6](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.5...v3.4.6) (2022-09-09)
 
 ### :rocket: New Feature
