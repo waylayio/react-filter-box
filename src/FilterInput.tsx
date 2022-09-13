@@ -44,7 +44,10 @@ export default class FilterInput extends React.Component<any, any> {
   }
 
   private handlePressingAnyCharacter() {
-    if (this.autoCompletePopup.completionShow) {
+    var doc = this.codeMirror.getDoc();
+    var currentCursor = doc.getCursor();
+    var text = doc.getRange({ line: 0, ch: 0 }, currentCursor);
+    if (this.autoCompletePopup.completionShow || text === "") {
       return;
     }
 
@@ -89,7 +92,7 @@ export default class FilterInput extends React.Component<any, any> {
     });
 
     ref.editor.on("blur", (cm, e?: any) => {
-      this.onSubmit(this.doc.getValue());
+      // this.onSubmit(this.doc.getValue());
       this.props.onBlur(e);
     });
 
