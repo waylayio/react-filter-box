@@ -1,9 +1,4 @@
-## [v3.4.7](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.6...v3.4.7) (2022-09-09)
-
-### :bug: Bug Fix
-
-* wrong condition on filterable content check ([d79873e](https://github.com/nhabuiduc/react-filter-box/commit/d79873e1a6959ac239dd3eadd44ee9a77a5f67ab))
-## [v3.4.6](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.5...v3.4.6) (2022-09-09)
+## [v3.4.8](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.5...v3.4.8) (2022-09-13)
 
 ### :rocket: New Feature
 
@@ -12,7 +7,9 @@
 ### :bug: Bug Fix
 
 * allow spaces when validating searchable content ([#13](https://github.com/nhabuiduc/react-filter-box/issues/13)) ([bfd1a74](https://github.com/nhabuiduc/react-filter-box/commit/bfd1a743dacb51653f6a7f9453920e2ae42ab51c))
+* dont show autocompletion if the input is empty ([#14](https://github.com/nhabuiduc/react-filter-box/issues/14)) ([b94d3a9](https://github.com/nhabuiduc/react-filter-box/commit/b94d3a9cd9009312f95e8dcaea4e98c9436da0e4))
 * remove suggestion of paranthesis ([#12](https://github.com/nhabuiduc/react-filter-box/issues/12)) ([e927a39](https://github.com/nhabuiduc/react-filter-box/commit/e927a39e46f95959688fb6846779f66fb671c491))
+* wrong condition on filterable content check ([d79873e](https://github.com/nhabuiduc/react-filter-box/commit/d79873e1a6959ac239dd3eadd44ee9a77a5f67ab))
 ## [v3.4.5](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.4...v3.4.5) (2022-07-25)
 
 ### :house: Internal
