@@ -16,6 +16,7 @@ export default class AutoCompletePopup {
   doc: CodeMirror.Doc;
   hintOptions: HintOptions;
   completionShow = false;
+  valueWasSelected = false;
   appendSpace = true;
   customRenderCompletionItem: (
     self: HintResult,
@@ -57,8 +58,8 @@ export default class AutoCompletePopup {
     if (typeof value !== "string") {
       return;
     }
-
     cm.replaceRange(this.processText(value), self.from, self.to, "complete");
+    this.valueWasSelected = true;
   }
 
   private renderHintElement(element: any, self: HintResult, data: Completion) {
@@ -155,8 +156,9 @@ export default class AutoCompletePopup {
       if (indexOfParanthesis >= 0) {
         values.splice(indexOfParanthesis, 1);
       }
+      const newValues = values.filter((el)=> el.value !== undefined)
       return {
-        list: _.map(values, (c) => this.buildComletionObj(c)),
+        list: _.map(newValues, (c) => this.buildComletionObj(c)),
         from: lastSeparatorPos,
         to: cursor,
       };

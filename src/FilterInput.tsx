@@ -97,8 +97,12 @@ export default class FilterInput extends React.Component<any, any> {
     });
 
     ref.editor.on("keyup", (cm: ExtendedCodeMirror, e?: KeyboardEvent) => {
-      if (e.keyCode == 13) {
-        this.onSubmit(this.doc.getValue());
+      if (!this.autoCompletePopup.valueWasSelected) {
+        if (e.code == "Enter") {
+          this.onSubmit(this.doc.getValue());
+        }
+      } else {
+        this.autoCompletePopup.valueWasSelected = false;
       }
     });
   }
