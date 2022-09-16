@@ -1,3 +1,8 @@
+## [v3.4.9](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.8...v3.4.9) (2022-09-16)
+
+### :bug: Bug Fix
+
+* stop calling on submit when a hint is picked ([#15](https://github.com/nhabuiduc/react-filter-box/issues/15)) ([7d9bd0a](https://github.com/nhabuiduc/react-filter-box/commit/7d9bd0abfac01661b0efd5e4a19bce200aee8814))
 ## [v3.4.8](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.5...v3.4.8) (2022-09-13)
 
 ### :rocket: New Feature
