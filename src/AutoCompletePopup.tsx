@@ -11,6 +11,7 @@ import {
 import grammarUtils from "./GrammarUtils";
 import * as ReactDOM from "react-dom";
 import * as React from "react";
+import FilterQueryParser from "./FilterQueryParser";
 
 export default class AutoCompletePopup {
   doc: CodeMirror.Doc;
@@ -21,9 +22,13 @@ export default class AutoCompletePopup {
   customRenderCompletionItem: (
     self: HintResult,
     data: Completion,
-    registerAndGetPickFunc: () => PickFunc
+    registerAndGetPickFunc: () => PickFunc,
+    currentCursor,
+    query
   ) => React.ReactElement<any>;
   pick: (cm: ExtendedCodeMirror, self: HintResult, data: Completion) => string;
+
+  parser = new FilterQueryParser();
 
   constructor(
     private cm: ExtendedCodeMirror,
@@ -77,8 +82,16 @@ export default class AutoCompletePopup {
     };
 
     if (this.customRenderCompletionItem) {
+      const query = this.parser.parse(this.doc.getValue());
+      const cursor = this.doc.getCursor();
       ReactDOM.render(
-        this.customRenderCompletionItem(self, data, registerAndGetPickFunc),
+        this.customRenderCompletionItem(
+          self,
+          data,
+          registerAndGetPickFunc,
+          cursor,
+          query
+        ),
         div
       );
     } else {
@@ -156,7 +169,7 @@ export default class AutoCompletePopup {
       if (indexOfParanthesis >= 0) {
         values.splice(indexOfParanthesis, 1);
       }
-      const newValues = values.filter((el)=> el.value !== undefined)
+      const newValues = values.filter((el) => el.value !== undefined);
       return {
         list: _.map(newValues, (c) => this.buildComletionObj(c)),
         from: lastSeparatorPos,
