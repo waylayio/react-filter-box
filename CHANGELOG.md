@@ -1,9 +1,24 @@
+## [v3.4.10](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.9...v3.4.10) (2022-09-29)
+
+### :bug: Bug Fix
+
+* add cursor and query as parameters for custom hint rendering ([#16](https://github.com/nhabuiduc/react-filter-box/issues/16)) ([2f61dc5](https://github.com/nhabuiduc/react-filter-box/commit/2f61dc59558d63aa9fde2d55d10b0a1ae76b0423))
 ## [v3.4.9](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.8...v3.4.9) (2022-09-16)
 
 ### :bug: Bug Fix
 
 * stop calling on submit when a hint is picked ([#15](https://github.com/nhabuiduc/react-filter-box/issues/15)) ([7d9bd0a](https://github.com/nhabuiduc/react-filter-box/commit/7d9bd0abfac01661b0efd5e4a19bce200aee8814))
-## [v3.4.8](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.5...v3.4.8) (2022-09-13)
+## [v3.4.8](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.7...v3.4.8) (2022-09-13)
+
+### :bug: Bug Fix
+
+* dont show autocompletion if the input is empty ([#14](https://github.com/nhabuiduc/react-filter-box/issues/14)) ([b94d3a9](https://github.com/nhabuiduc/react-filter-box/commit/b94d3a9cd9009312f95e8dcaea4e98c9436da0e4))
+## [v3.4.7](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.6...v3.4.7) (2022-09-09)
+
+### :bug: Bug Fix
+
+* wrong condition on filterable content check ([d79873e](https://github.com/nhabuiduc/react-filter-box/commit/d79873e1a6959ac239dd3eadd44ee9a77a5f67ab))
+## [v3.4.6](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.5...v3.4.6) (2022-09-09)
 
 ### :rocket: New Feature
 
@@ -12,9 +27,7 @@
 ### :bug: Bug Fix
 
 * allow spaces when validating searchable content ([#13](https://github.com/nhabuiduc/react-filter-box/issues/13)) ([bfd1a74](https://github.com/nhabuiduc/react-filter-box/commit/bfd1a743dacb51653f6a7f9453920e2ae42ab51c))
-* dont show autocompletion if the input is empty ([#14](https://github.com/nhabuiduc/react-filter-box/issues/14)) ([b94d3a9](https://github.com/nhabuiduc/react-filter-box/commit/b94d3a9cd9009312f95e8dcaea4e98c9436da0e4))
 * remove suggestion of paranthesis ([#12](https://github.com/nhabuiduc/react-filter-box/issues/12)) ([e927a39](https://github.com/nhabuiduc/react-filter-box/commit/e927a39e46f95959688fb6846779f66fb671c491))
-* wrong condition on filterable content check ([d79873e](https://github.com/nhabuiduc/react-filter-box/commit/d79873e1a6959ac239dd3eadd44ee9a77a5f67ab))
 ## [v3.4.5](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.4...v3.4.5) (2022-07-25)
 
 ### :house: Internal
