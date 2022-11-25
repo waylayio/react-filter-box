@@ -95,7 +95,7 @@ export default class AutoCompletePopup {
         div
       );
     } else {
-      ReactDOM.render(<div className={className}>{data.value}</div>, div);
+      ReactDOM.render(<div className={className}>{data.value as any}</div>, div);
     }
 
     element.appendChild(div);
