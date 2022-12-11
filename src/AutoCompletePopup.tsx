@@ -116,7 +116,7 @@ export default class AutoCompletePopup {
     completionControl.pick(self, index);
   }
 
-  private buildComletionObj(info: HintInfo): Completion {
+  private buildCompletionObj(info: HintInfo): Completion {
     return {
       value: info.value,
       type: info.type,
@@ -171,7 +171,7 @@ export default class AutoCompletePopup {
       }
       const newValues = values.filter((el) => el.value !== undefined);
       return {
-        list: _.map(newValues, (c) => this.buildComletionObj(c)),
+        list: _.map(newValues, (c) => this.buildCompletionObj(c)),
         from: lastSeparatorPos,
         to: cursor,
       };

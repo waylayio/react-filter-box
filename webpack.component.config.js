@@ -3,6 +3,7 @@ var _ = require("lodash");
 var commonConfig = require("./webpack.common.config");
 
 var config = _.assign(commonConfig, {
+  mode: "production",
   devtool: 'source-map',
   entry: [
     "./src/ReactFilterBox.tsx"
