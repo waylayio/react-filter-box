@@ -1,12 +1,11 @@
 import * as React from "react";
-import * as _ from "lodash";
 import * as CodeMirror from "codemirror";
 import "codemirror/addon/hint/show-hint";
 import "codemirror/addon/display/placeholder";
 import "./FilterMode";
 import "codemirror/lib/codemirror.css";
 import "codemirror/addon/hint/show-hint.css";
-import { UnControlled as ReactCodeMirror, IInstance } from "react-codemirror2";
+import { IInstance, UnControlled as ReactCodeMirror } from "react-codemirror2";
 
 import grammarUtils from "./GrammarUtils";
 import { ExtendedCodeMirror } from "./models/ExtendedCodeMirror";
@@ -47,10 +46,20 @@ export default class FilterInput extends React.Component<any, any> {
     var doc = this.codeMirror.getDoc();
     var currentCursor = doc.getCursor();
     var text = doc.getRange({ line: 0, ch: 0 }, currentCursor);
-    if (this.autoCompletePopup.completionShow || text === "") {
+    if (this.autoCompletePopup.completionShow || text === "" || !this.codeMirror.state.focused) {
       return;
     }
 
+    this.autoCompletePopup.show();
+  }
+
+  private handleFocus() {
+    var doc = this.codeMirror.getDoc();
+    var currentCursor = doc.getCursor();
+    var text = doc.getRange({ line: 0, ch: 0 }, currentCursor);
+    if (this.autoCompletePopup.completionShow || text === "") {
+      return;
+    }
     this.autoCompletePopup.show();
   }
 
@@ -87,7 +96,7 @@ export default class FilterInput extends React.Component<any, any> {
     });
 
     ref.editor.on("focus", (cm, e?: any) => {
-      this.handlePressingAnyCharacter();
+      this.handleFocus();
       this.props.onFocus(e);
     });
 
