@@ -1,8 +1,16 @@
-## [v3.4.10](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.9...v3.4.10) (2022-09-29)
+## [v3.4.11](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.9...v3.4.11) (2023-01-12)
 
 ### :bug: Bug Fix
 
 * add cursor and query as parameters for custom hint rendering ([#16](https://github.com/nhabuiduc/react-filter-box/issues/16)) ([2f61dc5](https://github.com/nhabuiduc/react-filter-box/commit/2f61dc59558d63aa9fde2d55d10b0a1ae76b0423))
+
+### :house: Internal
+
+* **config:** removes 'paths-ignore' from codeql config ([89fec72](https://github.com/nhabuiduc/react-filter-box/commit/89fec726ceb8e88dda181fb0f0a7a5c665d9bc5a))
+* **config:** removes unwanted 'paths-ignore' from codeql analysis config ([9e03d52](https://github.com/nhabuiduc/react-filter-box/commit/9e03d5233cd93303bcaab37d430a40dfd3981479))
+* **deps:** bump json5 from 2.2.1 to 2.2.3 ([#17](https://github.com/nhabuiduc/react-filter-box/issues/17)) ([09a5548](https://github.com/nhabuiduc/react-filter-box/commit/09a554822b10d69f2149accc326a9b8fecb95ca4))
+* **deps:** regenerate yarn.lock based on .yarnrc config; adds resolution on loader-utils ([c175f6e](https://github.com/nhabuiduc/react-filter-box/commit/c175f6ed864ddaa149e86d96c7446a5f13831e08))
+* **deps:** updates dependencies ([1abd1d8](https://github.com/nhabuiduc/react-filter-box/commit/1abd1d88c6bc538dbfafaed0f65bcd65f9a4dfb7))
 ## [v3.4.9](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.8...v3.4.9) (2022-09-16)
 
 ### :bug: Bug Fix
