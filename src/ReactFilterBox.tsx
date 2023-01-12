@@ -1,18 +1,15 @@
 import * as React from "react";
-import * as _ from "lodash";
+import {countBy} from "lodash";
 import FilterInput from "./FilterInput";
 import SimpleResultProcessing from "./SimpleResultProcessing";
 
-import GridDataAutoCompleteHandler, {
-  Option,
-} from "./GridDataAutoCompleteHandler";
+import GridDataAutoCompleteHandler, {Option,} from "./GridDataAutoCompleteHandler";
 import Expression from "./Expression";
 import FilterQueryParser from "./FilterQueryParser";
 import BaseResultProcessing from "./BaseResultProcessing";
 import BaseAutoCompleteHandler from "./BaseAutoCompleteHandler";
 import ParsedError from "./ParsedError";
 import validateQuery from "./validateQuery";
-import { countBy } from "lodash";
 
 const DOUBLE_QUOTE = '"';
 const SPACE = " ";
@@ -131,12 +128,20 @@ export default class ReactFilterBox extends React.Component<any, any> {
       );
   }
 
-  onBlur() {
+  onBlur(event: any) {
+    const { onBlur } = this.props;
     this.setState({ isFocus: false });
+    if (onBlur) {
+      onBlur(event);
+    }
   }
 
-  onFocus() {
+  onFocus(event: any) {
+    const { onFocus } = this.props;
     this.setState({ isFocus: true });
+    if (onFocus) {
+      onFocus(event);
+    }
   }
 
   render() {
