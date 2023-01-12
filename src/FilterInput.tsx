@@ -42,22 +42,11 @@ export default class FilterInput extends React.Component<any, any> {
     };
   }
 
-  private handlePressingAnyCharacter() {
-    var doc = this.codeMirror.getDoc();
-    var currentCursor = doc.getCursor();
-    var text = doc.getRange({ line: 0, ch: 0 }, currentCursor);
+  private handleFocusOrEmptyText() {
+    const doc = this.codeMirror.getDoc();
+    const currentCursor = doc.getCursor();
+    const text = doc.getRange({line: 0, ch: 0}, currentCursor);
     if (this.autoCompletePopup.completionShow || text === "" || !this.codeMirror.state.focused) {
-      return;
-    }
-
-    this.autoCompletePopup.show();
-  }
-
-  private handleFocus() {
-    var doc = this.codeMirror.getDoc();
-    var currentCursor = doc.getCursor();
-    var text = doc.getRange({ line: 0, ch: 0 }, currentCursor);
-    if (this.autoCompletePopup.completionShow || text === "") {
       return;
     }
     this.autoCompletePopup.show();
@@ -92,11 +81,11 @@ export default class FilterInput extends React.Component<any, any> {
     });
 
     ref.editor.on("changes", () => {
-      this.handlePressingAnyCharacter();
+      this.handleFocusOrEmptyText();
     });
 
     ref.editor.on("focus", (cm, e?: any) => {
-      this.handleFocus();
+      this.handleFocusOrEmptyText();
       this.props.onFocus(e);
     });
 
