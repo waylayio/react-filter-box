@@ -1,3 +1,8 @@
+## [v3.4.12](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.11...v3.4.12) (2023-02-27)
+
+### :bug: Bug Fix
+
+* fixes 'e.update is not a function' error ([a8fd65a](https://github.com/nhabuiduc/react-filter-box/commit/a8fd65a6557ba7e250f2f6649c600a0aff118cb5))
 ## [v3.4.11](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.9...v3.4.11) (2023-01-12)
 
 ### :bug: Bug Fix
