@@ -75,8 +75,12 @@ export default class FilterInput extends React.Component<any, any> {
     this.autoCompletePopup.pick = this.props.autoCompletePick;
 
     ref.editor.on("beforeChange", function (instance, change) {
-      var newtext = change.text.join("").replace(/\n/g, ""); // remove ALL \n !
-      change.update(change.from, change.to, [newtext] as any);
+      // remove new lines
+      const newtext = change.text.join("").replace(/\n/g, "");
+      // if the change came from undo/redo, `update` is undefined and the change cannot be modified. */
+      if (typeof change.update === 'function') {
+        change.update(change.from, change.to, [newtext] as any);
+      }
       return true;
     });
 
