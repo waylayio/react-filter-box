@@ -28,6 +28,7 @@ export default class ReactFilterBox extends React.Component<any, any> {
     onFocus: () => {},
     editorConfig: {},
     strictMode: false,
+    readOnly: false,
   };
   parser = new FilterQueryParser();
 
@@ -136,7 +137,7 @@ export default class ReactFilterBox extends React.Component<any, any> {
   }
 
   onFocus() {
-    this.setState({ isFocus: true });
+    if (!this.props.readOnly) this.setState({ isFocus: true });
   }
 
   render() {
@@ -160,6 +161,7 @@ export default class ReactFilterBox extends React.Component<any, any> {
           onSubmit={this.onSubmit.bind(this)}
           onChange={this.onChange.bind(this)}
           editorConfig={this.props.editorConfig}
+          readOnly={this.props.readOnly}
         />
       </div>
     );

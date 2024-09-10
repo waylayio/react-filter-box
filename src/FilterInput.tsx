@@ -6,7 +6,7 @@ import "codemirror/addon/display/placeholder";
 import "./FilterMode";
 import "codemirror/lib/codemirror.css";
 import "codemirror/addon/hint/show-hint.css";
-import { UnControlled as ReactCodeMirror, IInstance } from "react-codemirror2";
+import { UnControlled as ReactCodeMirror } from "react-codemirror2";
 
 import grammarUtils from "./GrammarUtils";
 import { ExtendedCodeMirror } from "./models/ExtendedCodeMirror";
@@ -28,7 +28,10 @@ export default class FilterInput extends React.Component<any, any> {
     super(props);
 
     if (props.editorConfig) {
-      this.options = { ...props.editorConfig, mode: "filter-mode" };
+      this.options = {
+        ...props.editorConfig,
+        mode: "filter-mode",
+      };
     }
   }
 
@@ -108,7 +111,7 @@ export default class FilterInput extends React.Component<any, any> {
   }
 
   private handleEditorChange(
-    _editor: IInstance,
+    _editor: any,
     _data: CodeMirror.EditorChange,
     value: string
   ) {
@@ -121,7 +124,10 @@ export default class FilterInput extends React.Component<any, any> {
       <ReactCodeMirror
         ref={this.codeMirrorRef.bind(this)}
         onChange={this.handleEditorChange.bind(this)}
-        options={this.options}
+        options={{
+          ...this.options,
+          readOnly: this.props.readOnly ? "nocursor" : false,
+        }}
         value={this.props.value}
       />
     );
