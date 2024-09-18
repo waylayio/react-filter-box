@@ -5,8 +5,7 @@ import "codemirror/addon/display/placeholder";
 import "./FilterMode";
 import "codemirror/lib/codemirror.css";
 import "codemirror/addon/hint/show-hint.css";
-import { IInstance, UnControlled as ReactCodeMirror } from "react-codemirror2";
-
+import { UnControlled as ReactCodeMirror } from "react-codemirror2";
 import grammarUtils from "./GrammarUtils";
 import { ExtendedCodeMirror } from "./models/ExtendedCodeMirror";
 import AutoCompletePopup from "./AutoCompletePopup";
@@ -27,7 +26,10 @@ export default class FilterInput extends React.Component<any, any> {
     super(props);
 
     if (props.editorConfig) {
-      this.options = { ...props.editorConfig, mode: "filter-mode" };
+      this.options = {
+        ...props.editorConfig,
+        mode: "filter-mode",
+      };
     }
   }
 
@@ -45,8 +47,12 @@ export default class FilterInput extends React.Component<any, any> {
   private handleFocusOrEmptyText() {
     const doc = this.codeMirror.getDoc();
     const currentCursor = doc.getCursor();
-    const text = doc.getRange({line: 0, ch: 0}, currentCursor);
-    if (this.autoCompletePopup.completionShow || text === "" || !this.codeMirror.state.focused) {
+    const text = doc.getRange({ line: 0, ch: 0 }, currentCursor);
+    if (
+      this.autoCompletePopup.completionShow ||
+      text === "" ||
+      !this.codeMirror.state.focused
+    ) {
       return;
     }
     this.autoCompletePopup.show();
@@ -78,7 +84,7 @@ export default class FilterInput extends React.Component<any, any> {
       // remove new lines
       const newtext = change.text.join("").replace(/\n/g, "");
       // if the change came from undo/redo, `update` is undefined and the change cannot be modified. */
-      if (typeof change.update === 'function') {
+      if (typeof change.update === "function") {
         change.update(change.from, change.to, [newtext] as any);
       }
       return true;
@@ -110,7 +116,7 @@ export default class FilterInput extends React.Component<any, any> {
   }
 
   private handleEditorChange(
-    _editor: IInstance,
+    _editor: any,
     _data: CodeMirror.EditorChange,
     value: string
   ) {
@@ -123,7 +129,10 @@ export default class FilterInput extends React.Component<any, any> {
       <ReactCodeMirror
         ref={this.codeMirrorRef.bind(this)}
         onChange={this.handleEditorChange.bind(this)}
-        options={this.options}
+        options={{
+          ...this.options,
+          readOnly: this.props.readOnly ? "nocursor" : false,
+        }}
         value={this.props.value}
       />
     );
