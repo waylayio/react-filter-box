@@ -1,5 +1,4 @@
 import * as React from "react";
-import * as _ from "lodash";
 import * as CodeMirror from "codemirror";
 import "codemirror/addon/hint/show-hint";
 import "codemirror/addon/display/placeholder";
@@ -7,7 +6,6 @@ import "./FilterMode";
 import "codemirror/lib/codemirror.css";
 import "codemirror/addon/hint/show-hint.css";
 import { UnControlled as ReactCodeMirror } from "react-codemirror2";
-
 import grammarUtils from "./GrammarUtils";
 import { ExtendedCodeMirror } from "./models/ExtendedCodeMirror";
 import AutoCompletePopup from "./AutoCompletePopup";
@@ -46,14 +44,17 @@ export default class FilterInput extends React.Component<any, any> {
     };
   }
 
-  private handlePressingAnyCharacter() {
-    var doc = this.codeMirror.getDoc();
-    var currentCursor = doc.getCursor();
-    var text = doc.getRange({ line: 0, ch: 0 }, currentCursor);
-    if (this.autoCompletePopup.completionShow || text === "") {
+  private handleFocusOrEmptyText() {
+    const doc = this.codeMirror.getDoc();
+    const currentCursor = doc.getCursor();
+    const text = doc.getRange({ line: 0, ch: 0 }, currentCursor);
+    if (
+      this.autoCompletePopup.completionShow ||
+      text === "" ||
+      !this.codeMirror.state.focused
+    ) {
       return;
     }
-
     this.autoCompletePopup.show();
   }
 
@@ -80,17 +81,21 @@ export default class FilterInput extends React.Component<any, any> {
     this.autoCompletePopup.pick = this.props.autoCompletePick;
 
     ref.editor.on("beforeChange", function (instance, change) {
-      var newtext = change.text.join("").replace(/\n/g, ""); // remove ALL \n !
-      change.update(change.from, change.to, [newtext] as any);
+      // remove new lines
+      const newtext = change.text.join("").replace(/\n/g, "");
+      // if the change came from undo/redo, `update` is undefined and the change cannot be modified. */
+      if (typeof change.update === "function") {
+        change.update(change.from, change.to, [newtext] as any);
+      }
       return true;
     });
 
     ref.editor.on("changes", () => {
-      this.handlePressingAnyCharacter();
+      this.handleFocusOrEmptyText();
     });
 
     ref.editor.on("focus", (cm, e?: any) => {
-      this.handlePressingAnyCharacter();
+      this.handleFocusOrEmptyText();
       this.props.onFocus(e);
     });
 
