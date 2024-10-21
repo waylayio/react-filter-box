@@ -1,9 +1,11 @@
 import * as React from "react";
-import {countBy} from "lodash";
+import { countBy } from "lodash";
 import FilterInput from "./FilterInput";
 import SimpleResultProcessing from "./SimpleResultProcessing";
 
-import GridDataAutoCompleteHandler, {Option,} from "./GridDataAutoCompleteHandler";
+import GridDataAutoCompleteHandler, {
+  Option,
+} from "./GridDataAutoCompleteHandler";
 import Expression from "./Expression";
 import FilterQueryParser from "./FilterQueryParser";
 import BaseResultProcessing from "./BaseResultProcessing";
@@ -25,6 +27,7 @@ export default class ReactFilterBox extends React.Component<any, any> {
     onFocus: () => {},
     editorConfig: {},
     strictMode: false,
+    readOnly: false,
   };
   parser = new FilterQueryParser();
 
@@ -138,9 +141,11 @@ export default class ReactFilterBox extends React.Component<any, any> {
 
   onFocus(event: any) {
     const { onFocus } = this.props;
-    this.setState({ isFocus: true });
-    if (onFocus) {
-      onFocus(event);
+    if (!this.props.readOnly) {
+      this.setState({ isFocus: true });
+      if (onFocus) {
+        onFocus(event);
+      }
     }
   }
 
@@ -165,6 +170,7 @@ export default class ReactFilterBox extends React.Component<any, any> {
           onSubmit={this.onSubmit.bind(this)}
           onChange={this.onChange.bind(this)}
           editorConfig={this.props.editorConfig}
+          readOnly={this.props.readOnly}
         />
       </div>
     );
