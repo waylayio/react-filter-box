@@ -1,3 +1,15 @@
+## [v3.4.14](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.13...v3.4.14) (2025-05-29)
+
+### :house: Internal
+
+* **deps:** bump cross-spawn from 7.0.3 to 7.0.6 ([#38](https://github.com/nhabuiduc/react-filter-box/issues/38)) ([02b37a6](https://github.com/nhabuiduc/react-filter-box/commit/02b37a6bdd64e6cf44153a6fe8bbaba0a0ba64b5))
+* **deps:** bump http-proxy-middleware from 2.0.6 to 2.0.7 ([#36](https://github.com/nhabuiduc/react-filter-box/issues/36)) ([0cd8440](https://github.com/nhabuiduc/react-filter-box/commit/0cd8440992e4e9b36fe6dbe37068a302aefcf012))
+* **deps:** bump http-proxy-middleware from 2.0.7 to 2.0.9 ([#42](https://github.com/nhabuiduc/react-filter-box/issues/42)) ([efe414e](https://github.com/nhabuiduc/react-filter-box/commit/efe414e330ba6cbf356c5d351aaf679d20d00caa))
+* **deps:** bump serialize-javascript from 6.0.1 to 6.0.2 ([#41](https://github.com/nhabuiduc/react-filter-box/issues/41)) ([807891a](https://github.com/nhabuiduc/react-filter-box/commit/807891abb05cecfb60c6e95c4d0b955d03c621f8))
+* resolution on webpack-dev-server for express v4.21.1 ([#37](https://github.com/nhabuiduc/react-filter-box/issues/37)) ([34e7e40](https://github.com/nhabuiduc/react-filter-box/commit/34e7e40e9b18a77125b065095ccd7fd10c24327d))
+* updates resolution for express (webpack-dev-server) to v4.21.2 ([#39](https://github.com/nhabuiduc/react-filter-box/issues/39)) ([e7a6134](https://github.com/nhabuiduc/react-filter-box/commit/e7a6134b1a73ddd4849b78fdf6f0b3e62dd04782))
+* upgrades babel dependencies ([#43](https://github.com/nhabuiduc/react-filter-box/issues/43)) ([517ad83](https://github.com/nhabuiduc/react-filter-box/commit/517ad8360ec3aba21cc8bfc13812cfee9ab5a4ad))
+* upgrades mocha to v11.0.1 ([#40](https://github.com/nhabuiduc/react-filter-box/issues/40)) ([d3250bf](https://github.com/nhabuiduc/react-filter-box/commit/d3250bffd2800dab20cd56da9f13b81e4181379f))
 ## [v3.4.13](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.12...v3.4.13) (2024-10-21)
 
 ### :rocket: New Feature
