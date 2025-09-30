@@ -16,7 +16,7 @@
     "@babel/preset-react"
   ],
   "plugins": [
-    "react-hot-loader/babel"
+    ["react-refresh/babel", { "skipEnvCheck": true }]
   ],
   "env": {
     "production": {

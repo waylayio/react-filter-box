@@ -9,9 +9,6 @@ import Demo1 from "./demo1";
 import Demo2 from "./demo2";
 import Demo3 from "./demo3";
 
-import { hot } from 'react-hot-loader'
-
-
 class App extends React.Component<any, any> {
     render() {
         return (
@@ -25,4 +22,4 @@ class App extends React.Component<any, any> {
     }
 }
 
-export default hot(module)(App)
+export default App
