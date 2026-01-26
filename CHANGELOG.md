@@ -1,3 +1,19 @@
+## [v3.4.15](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.14...v3.4.15) (2026-01-26)
+
+### :bug: Bug Fix
+
+* WPPM-2953 add OR operator in suggestions ([#52](https://github.com/nhabuiduc/react-filter-box/issues/52)) ([c20eb2f](https://github.com/nhabuiduc/react-filter-box/commit/c20eb2f8a1ec069dc737bb755a9e8613b24daee5))
+
+### :house: Internal
+
+* **deps:** bump form-data from 4.0.0 to 4.0.4 ([#46](https://github.com/nhabuiduc/react-filter-box/issues/46)) ([70d7b7a](https://github.com/nhabuiduc/react-filter-box/commit/70d7b7a2e40a0a8d50d0af61ce4ea98035fd8bff))
+* **deps:** bump node-forge from 1.3.1 to 1.3.2 ([#50](https://github.com/nhabuiduc/react-filter-box/issues/50)) ([7f59fce](https://github.com/nhabuiduc/react-filter-box/commit/7f59fcea0ae92b7b0e4c49b9b5d56c26593ca83b))
+* **deps:** upgrades glob@10 to v10.5.0 ([#49](https://github.com/nhabuiduc/react-filter-box/issues/49)) ([7981966](https://github.com/nhabuiduc/react-filter-box/commit/7981966e4bfea4eb1f333758d67983ed0383b0cc))
+* **deps:** upgrades js-yaml@3 to v3.14.2 and js-yaml@4 to v4.1.1 ([#48](https://github.com/nhabuiduc/react-filter-box/issues/48)) ([c320378](https://github.com/nhabuiduc/react-filter-box/commit/c3203788c694152d0580ada051d23ccddb948803))
+* **deps-dev:** bump webpack-dev-server from 5.1.0 to 5.2.1 ([#44](https://github.com/nhabuiduc/react-filter-box/issues/44)) ([af7ff53](https://github.com/nhabuiduc/react-filter-box/commit/af7ff5380f8f34411a29c5c176ce5550c451cc94))
+* replaces react-refresh with @pmmmwh/react-refresh-webpack-plugin ([#47](https://github.com/nhabuiduc/react-filter-box/issues/47)) ([ecbfa56](https://github.com/nhabuiduc/react-filter-box/commit/ecbfa56df80a99d0d95553bcb51b2a9624cd7849))
+* upgrade express to v4.22.1 ([#51](https://github.com/nhabuiduc/react-filter-box/issues/51)) ([f0e07e6](https://github.com/nhabuiduc/react-filter-box/commit/f0e07e636240615a3c4bf9cf81609051dce932e9))
+* upgrades compression to v1.8.1 ([#45](https://github.com/nhabuiduc/react-filter-box/issues/45)) ([5eb66e1](https://github.com/nhabuiduc/react-filter-box/commit/5eb66e1b7de83991edf8defce4fa020412af92fe))
 ## [v3.4.14](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.13...v3.4.14) (2025-05-29)
 
 ### :house: Internal
