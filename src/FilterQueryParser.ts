@@ -1,4 +1,4 @@
-const parser: ExtendedParser = require("./grammar");
+import { parser } from "./Grammar";
 import * as PEG from "pegjs";
 import * as _ from "lodash";
 import BaseAutoCompleteHandler from "./BaseAutoCompleteHandler";

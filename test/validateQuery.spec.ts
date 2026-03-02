@@ -39,7 +39,6 @@ describe("#validateQuery", () => {
             ];
 
             var result = validateQuery(expression, autoCompleteHandler);
-            console.log(result);
             expect(result.isValid).to.be.true;
         });
 

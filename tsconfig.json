@@ -3,6 +3,7 @@
     "noImplicitAny": false,
     "removeComments": true,
     "skipLibCheck": true,
+    "types": ["vitest/globals"],
     "jsx": "react",
     "target": "es5",
     "module": "commonjs",

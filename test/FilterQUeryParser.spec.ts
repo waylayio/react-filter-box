@@ -171,9 +171,6 @@ describe("#FilterQueryParser", () => {
 
       it("should return correct expressions with complex query ", () => {
          var result = parser.parse("c1 == v1 AND (((c2 == v2)) OR c3 == v3 OR ( (c4 == v4) AND (c5 == v5) ) )") as Expression[];
-
-         //console.log(JSON.stringify(result));
-
          var obj = JSON.parse(`[
    {
       "category":"c1",
