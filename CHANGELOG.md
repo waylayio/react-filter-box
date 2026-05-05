@@ -1,117 +1,223 @@
-## [v3.4.15](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.14...v3.4.15) (2026-01-26)
+## 3.5.0-beta.0 (2026-05-05)
 
-### :bug: Bug Fix
+* chore: migrate to vitest (#57) ([11cbdaf](https://github.com/nhabuiduc/react-filter-box/commit/11cbdaf)), closes [#57](https://github.com/nhabuiduc/react-filter-box/issues/57)
+* chore: upgrade jsdom to v28.1.0 (#59) ([6a5bf89](https://github.com/nhabuiduc/react-filter-box/commit/6a5bf89)), closes [#59](https://github.com/nhabuiduc/react-filter-box/issues/59)
+* chore: upgrade minimatch to latest version(s) (#56) ([fa02377](https://github.com/nhabuiduc/react-filter-box/commit/fa02377)), closes [#56](https://github.com/nhabuiduc/react-filter-box/issues/56)
+* chore: upgrade picomatch (#62) ([1f10728](https://github.com/nhabuiduc/react-filter-box/commit/1f10728)), closes [#62](https://github.com/nhabuiduc/react-filter-box/issues/62)
+* chore(deps-dev): bump webpack from 5.95.0 to 5.104.1 (#54) ([cc2b0f3](https://github.com/nhabuiduc/react-filter-box/commit/cc2b0f3)), closes [#54](https://github.com/nhabuiduc/react-filter-box/issues/54)
+* chore(deps): bump handlebars from 4.7.7 to 4.7.9 (#61) ([8b3f900](https://github.com/nhabuiduc/react-filter-box/commit/8b3f900)), closes [#61](https://github.com/nhabuiduc/react-filter-box/issues/61)
+* chore(deps): bump lodash from 4.17.21 to 4.17.23 (#53) ([79d7b9b](https://github.com/nhabuiduc/react-filter-box/commit/79d7b9b)), closes [#53](https://github.com/nhabuiduc/react-filter-box/issues/53)
+* chore(deps): bump lodash from 4.17.23 to 4.18.1 (#64) ([287c6b2](https://github.com/nhabuiduc/react-filter-box/commit/287c6b2)), closes [#64](https://github.com/nhabuiduc/react-filter-box/issues/64)
+* chore(deps): bump qs from 6.14.1 to 6.14.2 (#55) ([1209f5a](https://github.com/nhabuiduc/react-filter-box/commit/1209f5a)), closes [#55](https://github.com/nhabuiduc/react-filter-box/issues/55)
+* chore(deps): bump svgo from 2.8.0 to 2.8.2 (#58) ([ee7aee7](https://github.com/nhabuiduc/react-filter-box/commit/ee7aee7)), closes [#58](https://github.com/nhabuiduc/react-filter-box/issues/58)
+* chore(deps): bump undici from 7.22.0 to 7.24.3 (#60) ([3c969e1](https://github.com/nhabuiduc/react-filter-box/commit/3c969e1)), closes [#60](https://github.com/nhabuiduc/react-filter-box/issues/60)
+* chore(deps): bump vite from 7.3.1 to 7.3.2 (#63) ([8a22e6e](https://github.com/nhabuiduc/react-filter-box/commit/8a22e6e)), closes [#63](https://github.com/nhabuiduc/react-filter-box/issues/63)
 
-* WPPM-2953 add OR operator in suggestions ([#52](https://github.com/nhabuiduc/react-filter-box/issues/52)) ([c20eb2f](https://github.com/nhabuiduc/react-filter-box/commit/c20eb2f8a1ec069dc737bb755a9e8613b24daee5))
+## <small>3.4.15 (2026-01-26)</small>
 
-### :house: Internal
+* v3.4.15 ([73f1f70](https://github.com/nhabuiduc/react-filter-box/commit/73f1f70))
+* fix: WPPM-2953 add OR operator in suggestions (#52) ([c20eb2f](https://github.com/nhabuiduc/react-filter-box/commit/c20eb2f)), closes [#52](https://github.com/nhabuiduc/react-filter-box/issues/52)
+* chore: replaces react-refresh with @pmmmwh/react-refresh-webpack-plugin (#47) ([ecbfa56](https://github.com/nhabuiduc/react-filter-box/commit/ecbfa56)), closes [#47](https://github.com/nhabuiduc/react-filter-box/issues/47)
+* chore: upgrade express to v4.22.1 (#51) ([f0e07e6](https://github.com/nhabuiduc/react-filter-box/commit/f0e07e6)), closes [#51](https://github.com/nhabuiduc/react-filter-box/issues/51)
+* chore: upgrades compression to v1.8.1 (#45) ([5eb66e1](https://github.com/nhabuiduc/react-filter-box/commit/5eb66e1)), closes [#45](https://github.com/nhabuiduc/react-filter-box/issues/45)
+* chore(deps-dev): bump webpack-dev-server from 5.1.0 to 5.2.1 (#44) ([af7ff53](https://github.com/nhabuiduc/react-filter-box/commit/af7ff53)), closes [#44](https://github.com/nhabuiduc/react-filter-box/issues/44)
+* chore(deps): bump form-data from 4.0.0 to 4.0.4 (#46) ([70d7b7a](https://github.com/nhabuiduc/react-filter-box/commit/70d7b7a)), closes [#46](https://github.com/nhabuiduc/react-filter-box/issues/46)
+* chore(deps): bump node-forge from 1.3.1 to 1.3.2 (#50) ([7f59fce](https://github.com/nhabuiduc/react-filter-box/commit/7f59fce)), closes [#50](https://github.com/nhabuiduc/react-filter-box/issues/50)
+* chore(deps): upgrades glob@10 to v10.5.0 (#49) ([7981966](https://github.com/nhabuiduc/react-filter-box/commit/7981966)), closes [#49](https://github.com/nhabuiduc/react-filter-box/issues/49)
+* chore(deps): upgrades js-yaml@3 to v3.14.2 and js-yaml@4 to v4.1.1 (#48) ([c320378](https://github.com/nhabuiduc/react-filter-box/commit/c320378)), closes [#48](https://github.com/nhabuiduc/react-filter-box/issues/48)
 
-* **deps:** bump form-data from 4.0.0 to 4.0.4 ([#46](https://github.com/nhabuiduc/react-filter-box/issues/46)) ([70d7b7a](https://github.com/nhabuiduc/react-filter-box/commit/70d7b7a2e40a0a8d50d0af61ce4ea98035fd8bff))
-* **deps:** bump node-forge from 1.3.1 to 1.3.2 ([#50](https://github.com/nhabuiduc/react-filter-box/issues/50)) ([7f59fce](https://github.com/nhabuiduc/react-filter-box/commit/7f59fcea0ae92b7b0e4c49b9b5d56c26593ca83b))
-* **deps:** upgrades glob@10 to v10.5.0 ([#49](https://github.com/nhabuiduc/react-filter-box/issues/49)) ([7981966](https://github.com/nhabuiduc/react-filter-box/commit/7981966e4bfea4eb1f333758d67983ed0383b0cc))
-* **deps:** upgrades js-yaml@3 to v3.14.2 and js-yaml@4 to v4.1.1 ([#48](https://github.com/nhabuiduc/react-filter-box/issues/48)) ([c320378](https://github.com/nhabuiduc/react-filter-box/commit/c3203788c694152d0580ada051d23ccddb948803))
-* **deps-dev:** bump webpack-dev-server from 5.1.0 to 5.2.1 ([#44](https://github.com/nhabuiduc/react-filter-box/issues/44)) ([af7ff53](https://github.com/nhabuiduc/react-filter-box/commit/af7ff5380f8f34411a29c5c176ce5550c451cc94))
-* replaces react-refresh with @pmmmwh/react-refresh-webpack-plugin ([#47](https://github.com/nhabuiduc/react-filter-box/issues/47)) ([ecbfa56](https://github.com/nhabuiduc/react-filter-box/commit/ecbfa56df80a99d0d95553bcb51b2a9624cd7849))
-* upgrade express to v4.22.1 ([#51](https://github.com/nhabuiduc/react-filter-box/issues/51)) ([f0e07e6](https://github.com/nhabuiduc/react-filter-box/commit/f0e07e636240615a3c4bf9cf81609051dce932e9))
-* upgrades compression to v1.8.1 ([#45](https://github.com/nhabuiduc/react-filter-box/issues/45)) ([5eb66e1](https://github.com/nhabuiduc/react-filter-box/commit/5eb66e1b7de83991edf8defce4fa020412af92fe))
-## [v3.4.14](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.13...v3.4.14) (2025-05-29)
+## <small>3.4.14 (2025-05-29)</small>
 
-### :house: Internal
+* v3.4.14 ([8b1d403](https://github.com/nhabuiduc/react-filter-box/commit/8b1d403))
+* chore: resolution on webpack-dev-server for express v4.21.1 (#37) ([34e7e40](https://github.com/nhabuiduc/react-filter-box/commit/34e7e40)), closes [#37](https://github.com/nhabuiduc/react-filter-box/issues/37)
+* chore: updates resolution for express (webpack-dev-server) to v4.21.2 (#39) ([e7a6134](https://github.com/nhabuiduc/react-filter-box/commit/e7a6134)), closes [#39](https://github.com/nhabuiduc/react-filter-box/issues/39)
+* chore: upgrades babel dependencies (#43) ([517ad83](https://github.com/nhabuiduc/react-filter-box/commit/517ad83)), closes [#43](https://github.com/nhabuiduc/react-filter-box/issues/43)
+* chore: upgrades mocha to v11.0.1 (#40) ([d3250bf](https://github.com/nhabuiduc/react-filter-box/commit/d3250bf)), closes [#40](https://github.com/nhabuiduc/react-filter-box/issues/40)
+* chore(deps): bump cross-spawn from 7.0.3 to 7.0.6 (#38) ([02b37a6](https://github.com/nhabuiduc/react-filter-box/commit/02b37a6)), closes [#38](https://github.com/nhabuiduc/react-filter-box/issues/38)
+* chore(deps): bump http-proxy-middleware from 2.0.6 to 2.0.7 (#36) ([0cd8440](https://github.com/nhabuiduc/react-filter-box/commit/0cd8440)), closes [#36](https://github.com/nhabuiduc/react-filter-box/issues/36)
+* chore(deps): bump http-proxy-middleware from 2.0.7 to 2.0.9 (#42) ([efe414e](https://github.com/nhabuiduc/react-filter-box/commit/efe414e)), closes [#42](https://github.com/nhabuiduc/react-filter-box/issues/42)
+* chore(deps): bump serialize-javascript from 6.0.1 to 6.0.2 (#41) ([807891a](https://github.com/nhabuiduc/react-filter-box/commit/807891a)), closes [#41](https://github.com/nhabuiduc/react-filter-box/issues/41)
 
-* **deps:** bump cross-spawn from 7.0.3 to 7.0.6 ([#38](https://github.com/nhabuiduc/react-filter-box/issues/38)) ([02b37a6](https://github.com/nhabuiduc/react-filter-box/commit/02b37a6bdd64e6cf44153a6fe8bbaba0a0ba64b5))
-* **deps:** bump http-proxy-middleware from 2.0.6 to 2.0.7 ([#36](https://github.com/nhabuiduc/react-filter-box/issues/36)) ([0cd8440](https://github.com/nhabuiduc/react-filter-box/commit/0cd8440992e4e9b36fe6dbe37068a302aefcf012))
-* **deps:** bump http-proxy-middleware from 2.0.7 to 2.0.9 ([#42](https://github.com/nhabuiduc/react-filter-box/issues/42)) ([efe414e](https://github.com/nhabuiduc/react-filter-box/commit/efe414e330ba6cbf356c5d351aaf679d20d00caa))
-* **deps:** bump serialize-javascript from 6.0.1 to 6.0.2 ([#41](https://github.com/nhabuiduc/react-filter-box/issues/41)) ([807891a](https://github.com/nhabuiduc/react-filter-box/commit/807891abb05cecfb60c6e95c4d0b955d03c621f8))
-* resolution on webpack-dev-server for express v4.21.1 ([#37](https://github.com/nhabuiduc/react-filter-box/issues/37)) ([34e7e40](https://github.com/nhabuiduc/react-filter-box/commit/34e7e40e9b18a77125b065095ccd7fd10c24327d))
-* updates resolution for express (webpack-dev-server) to v4.21.2 ([#39](https://github.com/nhabuiduc/react-filter-box/issues/39)) ([e7a6134](https://github.com/nhabuiduc/react-filter-box/commit/e7a6134b1a73ddd4849b78fdf6f0b3e62dd04782))
-* upgrades babel dependencies ([#43](https://github.com/nhabuiduc/react-filter-box/issues/43)) ([517ad83](https://github.com/nhabuiduc/react-filter-box/commit/517ad8360ec3aba21cc8bfc13812cfee9ab5a4ad))
-* upgrades mocha to v11.0.1 ([#40](https://github.com/nhabuiduc/react-filter-box/issues/40)) ([d3250bf](https://github.com/nhabuiduc/react-filter-box/commit/d3250bffd2800dab20cd56da9f13b81e4181379f))
-## [v3.4.13](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.12...v3.4.13) (2024-10-21)
+## <small>3.4.13 (2024-10-21)</small>
 
-### :rocket: New Feature
+* v3.4.13 ([e26558e](https://github.com/nhabuiduc/react-filter-box/commit/e26558e))
+* feat: add readOnly property (#34) ([f473dc7](https://github.com/nhabuiduc/react-filter-box/commit/f473dc7)), closes [#34](https://github.com/nhabuiduc/react-filter-box/issues/34)
+* fix: dependabot security alerts (#35) ([4a7c53a](https://github.com/nhabuiduc/react-filter-box/commit/4a7c53a)), closes [#35](https://github.com/nhabuiduc/react-filter-box/issues/35)
+* chore: removes codeql config ([8f9ebf8](https://github.com/nhabuiduc/react-filter-box/commit/8f9ebf8))
+* chore(deps-dev): bump webpack from 5.75.0 to 5.76.0 (#19) ([7e0e7ba](https://github.com/nhabuiduc/react-filter-box/commit/7e0e7ba)), closes [#19](https://github.com/nhabuiduc/react-filter-box/issues/19)
+* chore(deps-dev): bump webpack from 5.89.0 to 5.94.0 (#32) ([2d7e67c](https://github.com/nhabuiduc/react-filter-box/commit/2d7e67c)), closes [#32](https://github.com/nhabuiduc/react-filter-box/issues/32)
+* chore(deps): bump @babel/traverse from 7.20.5 to 7.23.2 (#24) ([b0dd987](https://github.com/nhabuiduc/react-filter-box/commit/b0dd987)), closes [#24](https://github.com/nhabuiduc/react-filter-box/issues/24)
+* chore(deps): bump braces from 3.0.2 to 3.0.3 (#30) ([9a690e9](https://github.com/nhabuiduc/react-filter-box/commit/9a690e9)), closes [#30](https://github.com/nhabuiduc/react-filter-box/issues/30)
+* chore(deps): bump express from 4.18.2 to 4.19.2 (#29) ([609a460](https://github.com/nhabuiduc/react-filter-box/commit/609a460)), closes [#29](https://github.com/nhabuiduc/react-filter-box/issues/29)
+* chore(deps): bump follow-redirects from 1.15.2 to 1.15.4 (#26) ([3348c46](https://github.com/nhabuiduc/react-filter-box/commit/3348c46)), closes [#26](https://github.com/nhabuiduc/react-filter-box/issues/26)
+* chore(deps): bump follow-redirects from 1.15.4 to 1.15.6 (#27) ([27707ce](https://github.com/nhabuiduc/react-filter-box/commit/27707ce)), closes [#27](https://github.com/nhabuiduc/react-filter-box/issues/27)
+* chore(deps): bump get-func-name from 2.0.0 to 2.0.2 (#23) ([715f9c0](https://github.com/nhabuiduc/react-filter-box/commit/715f9c0)), closes [#23](https://github.com/nhabuiduc/react-filter-box/issues/23)
+* chore(deps): bump micromatch from 4.0.5 to 4.0.8 (#33) ([9488156](https://github.com/nhabuiduc/react-filter-box/commit/9488156)), closes [#33](https://github.com/nhabuiduc/react-filter-box/issues/33)
+* chore(deps): bump semver from 5.7.1 to 5.7.2 (#21) ([0ab921e](https://github.com/nhabuiduc/react-filter-box/commit/0ab921e)), closes [#21](https://github.com/nhabuiduc/react-filter-box/issues/21)
+* chore(deps): bump tough-cookie from 4.1.2 to 4.1.3 (#22) ([e5e05e5](https://github.com/nhabuiduc/react-filter-box/commit/e5e05e5)), closes [tou#cookie](https://github.com/tou/issues/cookie) [#22](https://github.com/nhabuiduc/react-filter-box/issues/22)
+* chore(deps): bump webpack-dev-middleware from 5.3.3 to 5.3.4 (#28) ([19233c7](https://github.com/nhabuiduc/react-filter-box/commit/19233c7)), closes [#28](https://github.com/nhabuiduc/react-filter-box/issues/28)
+* chore(deps): bump word-wrap from 1.2.3 to 1.2.4 (#20) ([4e890ee](https://github.com/nhabuiduc/react-filter-box/commit/4e890ee)), closes [#20](https://github.com/nhabuiduc/react-filter-box/issues/20)
+* chore(deps): bump ws from 8.11.0 to 8.17.1 (#31) ([853bd2d](https://github.com/nhabuiduc/react-filter-box/commit/853bd2d)), closes [#31](https://github.com/nhabuiduc/react-filter-box/issues/31)
+* security: fixes CVE-2023-44270 (#25) ([74d7c0a](https://github.com/nhabuiduc/react-filter-box/commit/74d7c0a)), closes [#25](https://github.com/nhabuiduc/react-filter-box/issues/25)
 
-* add readOnly property ([#34](https://github.com/nhabuiduc/react-filter-box/issues/34)) ([f473dc7](https://github.com/nhabuiduc/react-filter-box/commit/f473dc7e1efe9e8d3d09372d10c30238b8748ac4))
+## <small>3.4.12 (2023-02-27)</small>
 
-### :bug: Bug Fix
+* v3.4.12 ([75683fc](https://github.com/nhabuiduc/react-filter-box/commit/75683fc))
+* fix: fixes 'e.update is not a function' error ([a8fd65a](https://github.com/nhabuiduc/react-filter-box/commit/a8fd65a))
 
-* dependabot security alerts ([#35](https://github.com/nhabuiduc/react-filter-box/issues/35)) ([4a7c53a](https://github.com/nhabuiduc/react-filter-box/commit/4a7c53adaf84f5074cda537fbb3084547e60dc9d))
+## <small>3.4.11 (2023-01-12)</small>
 
-### :house: Internal
+* v3.4.10 ([f70a3e4](https://github.com/nhabuiduc/react-filter-box/commit/f70a3e4))
+* v3.4.11 ([d44078c](https://github.com/nhabuiduc/react-filter-box/commit/d44078c))
+* WPPM-281 - Task status floating window is stuck on page until it is refreshed (#18) ([9592651](https://github.com/nhabuiduc/react-filter-box/commit/9592651)), closes [#18](https://github.com/nhabuiduc/react-filter-box/issues/18)
+* chore(config): removes 'paths-ignore' from codeql config ([89fec72](https://github.com/nhabuiduc/react-filter-box/commit/89fec72))
+* chore(config): removes unwanted 'paths-ignore' from codeql analysis config ([9e03d52](https://github.com/nhabuiduc/react-filter-box/commit/9e03d52))
+* chore(deps): bump json5 from 2.2.1 to 2.2.3 (#17) ([09a5548](https://github.com/nhabuiduc/react-filter-box/commit/09a5548)), closes [#17](https://github.com/nhabuiduc/react-filter-box/issues/17)
+* chore(deps): regenerate yarn.lock based on .yarnrc config; adds resolution on loader-utils ([c175f6e](https://github.com/nhabuiduc/react-filter-box/commit/c175f6e))
+* chore(deps): updates dependencies ([1abd1d8](https://github.com/nhabuiduc/react-filter-box/commit/1abd1d8))
+* fix: add cursor and query as parameters for custom hint rendering (#16) ([2f61dc5](https://github.com/nhabuiduc/react-filter-box/commit/2f61dc5)), closes [#16](https://github.com/nhabuiduc/react-filter-box/issues/16)
 
-* **deps:** bump @babel/traverse from 7.20.5 to 7.23.2 ([#24](https://github.com/nhabuiduc/react-filter-box/issues/24)) ([b0dd987](https://github.com/nhabuiduc/react-filter-box/commit/b0dd987798f2c17e43dda8a0f0cf09f51780a381))
-* **deps:** bump braces from 3.0.2 to 3.0.3 ([#30](https://github.com/nhabuiduc/react-filter-box/issues/30)) ([9a690e9](https://github.com/nhabuiduc/react-filter-box/commit/9a690e9d0dafa951ab76f6fca6efb247469ced2b))
-* **deps:** bump express from 4.18.2 to 4.19.2 ([#29](https://github.com/nhabuiduc/react-filter-box/issues/29)) ([609a460](https://github.com/nhabuiduc/react-filter-box/commit/609a460e514d38b97fc84ab898f0b26b92402a48))
-* **deps:** bump follow-redirects from 1.15.2 to 1.15.4 ([#26](https://github.com/nhabuiduc/react-filter-box/issues/26)) ([3348c46](https://github.com/nhabuiduc/react-filter-box/commit/3348c4674272991f77e4cd05c0354c6ec8a09f4a))
-* **deps:** bump follow-redirects from 1.15.4 to 1.15.6 ([#27](https://github.com/nhabuiduc/react-filter-box/issues/27)) ([27707ce](https://github.com/nhabuiduc/react-filter-box/commit/27707ce93195d182acdccb8f300083f672ce44cc))
-* **deps:** bump get-func-name from 2.0.0 to 2.0.2 ([#23](https://github.com/nhabuiduc/react-filter-box/issues/23)) ([715f9c0](https://github.com/nhabuiduc/react-filter-box/commit/715f9c0e90d9aef0e71a638f0fdbf7a784e4bb15))
-* **deps:** bump micromatch from 4.0.5 to 4.0.8 ([#33](https://github.com/nhabuiduc/react-filter-box/issues/33)) ([9488156](https://github.com/nhabuiduc/react-filter-box/commit/9488156353d641b6a7b8d701ea8d429e0ad2a2fd))
-* **deps:** bump semver from 5.7.1 to 5.7.2 ([#21](https://github.com/nhabuiduc/react-filter-box/issues/21)) ([0ab921e](https://github.com/nhabuiduc/react-filter-box/commit/0ab921eccc5acb5c3e95ccf7b95e8091b93faeef))
-* **deps:** bump tough-cookie from 4.1.2 to 4.1.3 ([#22](https://github.com/nhabuiduc/react-filter-box/issues/22)) ([e5e05e5](https://github.com/nhabuiduc/react-filter-box/commit/e5e05e5f918aa4633dc64e816dfef7a7f72c68d2))
-* **deps:** bump webpack-dev-middleware from 5.3.3 to 5.3.4 ([#28](https://github.com/nhabuiduc/react-filter-box/issues/28)) ([19233c7](https://github.com/nhabuiduc/react-filter-box/commit/19233c767c824ba6d6566bf59cbf894f8682eac2))
-* **deps:** bump word-wrap from 1.2.3 to 1.2.4 ([#20](https://github.com/nhabuiduc/react-filter-box/issues/20)) ([4e890ee](https://github.com/nhabuiduc/react-filter-box/commit/4e890eef674071bdc5caedd30dc57f43ef733ae0))
-* **deps:** bump ws from 8.11.0 to 8.17.1 ([#31](https://github.com/nhabuiduc/react-filter-box/issues/31)) ([853bd2d](https://github.com/nhabuiduc/react-filter-box/commit/853bd2d3ddeae920a28d11e7cb652f0bf0e3c15a))
-* **deps-dev:** bump webpack from 5.75.0 to 5.76.0 ([#19](https://github.com/nhabuiduc/react-filter-box/issues/19)) ([7e0e7ba](https://github.com/nhabuiduc/react-filter-box/commit/7e0e7ba8e90c147fa74da2e3be681693e8f62260))
-* **deps-dev:** bump webpack from 5.89.0 to 5.94.0 ([#32](https://github.com/nhabuiduc/react-filter-box/issues/32)) ([2d7e67c](https://github.com/nhabuiduc/react-filter-box/commit/2d7e67c170a0bf3e00c6a543404f07399438e93e))
-* removes codeql config ([8f9ebf8](https://github.com/nhabuiduc/react-filter-box/commit/8f9ebf8e1b6fd9b16baa583d461eb4e53bbf33d4))
-## [v3.4.12](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.11...v3.4.12) (2023-02-27)
+## <small>3.4.9 (2022-09-16)</small>
 
-### :bug: Bug Fix
+* v3.4.9 ([c490a5f](https://github.com/nhabuiduc/react-filter-box/commit/c490a5f))
+* fix: stop calling on submit when a hint is picked (#15) ([7d9bd0a](https://github.com/nhabuiduc/react-filter-box/commit/7d9bd0a)), closes [#15](https://github.com/nhabuiduc/react-filter-box/issues/15)
 
-* fixes 'e.update is not a function' error ([a8fd65a](https://github.com/nhabuiduc/react-filter-box/commit/a8fd65a6557ba7e250f2f6649c600a0aff118cb5))
-## [v3.4.11](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.9...v3.4.11) (2023-01-12)
+## <small>3.4.8 (2022-09-13)</small>
 
-### :bug: Bug Fix
+* v3.4.8 ([f310393](https://github.com/nhabuiduc/react-filter-box/commit/f310393))
+* fix: dont show autocompletion if the input is empty (#14) ([b94d3a9](https://github.com/nhabuiduc/react-filter-box/commit/b94d3a9)), closes [#14](https://github.com/nhabuiduc/react-filter-box/issues/14)
 
-* add cursor and query as parameters for custom hint rendering ([#16](https://github.com/nhabuiduc/react-filter-box/issues/16)) ([2f61dc5](https://github.com/nhabuiduc/react-filter-box/commit/2f61dc59558d63aa9fde2d55d10b0a1ae76b0423))
+## <small>3.4.7 (2022-09-09)</small>
 
-### :house: Internal
+* v3.4.7 ([1569111](https://github.com/nhabuiduc/react-filter-box/commit/1569111))
+* fix: wrong condition on filterable content check ([d79873e](https://github.com/nhabuiduc/react-filter-box/commit/d79873e))
 
-* **config:** removes 'paths-ignore' from codeql config ([89fec72](https://github.com/nhabuiduc/react-filter-box/commit/89fec726ceb8e88dda181fb0f0a7a5c665d9bc5a))
-* **config:** removes unwanted 'paths-ignore' from codeql analysis config ([9e03d52](https://github.com/nhabuiduc/react-filter-box/commit/9e03d5233cd93303bcaab37d430a40dfd3981479))
-* **deps:** bump json5 from 2.2.1 to 2.2.3 ([#17](https://github.com/nhabuiduc/react-filter-box/issues/17)) ([09a5548](https://github.com/nhabuiduc/react-filter-box/commit/09a554822b10d69f2149accc326a9b8fecb95ca4))
-* **deps:** regenerate yarn.lock based on .yarnrc config; adds resolution on loader-utils ([c175f6e](https://github.com/nhabuiduc/react-filter-box/commit/c175f6ed864ddaa149e86d96c7446a5f13831e08))
-* **deps:** updates dependencies ([1abd1d8](https://github.com/nhabuiduc/react-filter-box/commit/1abd1d88c6bc538dbfafaed0f65bcd65f9a4dfb7))
-## [v3.4.9](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.8...v3.4.9) (2022-09-16)
+## <small>3.4.6 (2022-09-09)</small>
 
-### :bug: Bug Fix
+* v3.4.6 ([cf15df1](https://github.com/nhabuiduc/react-filter-box/commit/cf15df1))
+* fix: allow spaces when validating searchable content (#13) ([bfd1a74](https://github.com/nhabuiduc/react-filter-box/commit/bfd1a74)), closes [#13](https://github.com/nhabuiduc/react-filter-box/issues/13)
+* fix: remove suggestion of paranthesis (#12) ([e927a39](https://github.com/nhabuiduc/react-filter-box/commit/e927a39)), closes [#12](https://github.com/nhabuiduc/react-filter-box/issues/12)
+* security: enable CodeQL (#11) ([fb9ba26](https://github.com/nhabuiduc/react-filter-box/commit/fb9ba26)), closes [#11](https://github.com/nhabuiduc/react-filter-box/issues/11)
+* feat: add CODEOWNERS file ([486e01c](https://github.com/nhabuiduc/react-filter-box/commit/486e01c))
 
-* stop calling on submit when a hint is picked ([#15](https://github.com/nhabuiduc/react-filter-box/issues/15)) ([7d9bd0a](https://github.com/nhabuiduc/react-filter-box/commit/7d9bd0abfac01661b0efd5e4a19bce200aee8814))
-## [v3.4.8](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.7...v3.4.8) (2022-09-13)
+## <small>3.4.5 (2022-07-25)</small>
 
-### :bug: Bug Fix
+* Bump dns-packet from 1.3.1 to 1.3.4 in /js-example ([59468ef](https://github.com/nhabuiduc/react-filter-box/commit/59468ef))
+* Bump eventsource from 1.0.7 to 1.1.2 in /js-example ([4b5fc4f](https://github.com/nhabuiduc/react-filter-box/commit/4b5fc4f))
+* Bump follow-redirects from 1.13.0 to 1.15.1 in /js-example ([0b075b1](https://github.com/nhabuiduc/react-filter-box/commit/0b075b1))
+* Bump glob-parent from 3.1.0 to 5.1.2 ([20fe554](https://github.com/nhabuiduc/react-filter-box/commit/20fe554))
+* Bump ini from 1.3.5 to 1.3.8 in /js-example ([99fc93c](https://github.com/nhabuiduc/react-filter-box/commit/99fc93c))
+* Bump lodash from 4.17.19 to 4.17.21 in /js-example ([a21ff9f](https://github.com/nhabuiduc/react-filter-box/commit/a21ff9f))
+* Bump ssri from 6.0.1 to 6.0.2 in /js-example ([d09712f](https://github.com/nhabuiduc/react-filter-box/commit/d09712f))
+* Bump tar from 4.4.8 to 4.4.19 in /js-example ([fd54812](https://github.com/nhabuiduc/react-filter-box/commit/fd54812))
+* Bump ua-parser-js from 0.7.19 to 0.7.31 in /js-example ([7bfc6ad](https://github.com/nhabuiduc/react-filter-box/commit/7bfc6ad))
+* v3.4.5 ([6f16131](https://github.com/nhabuiduc/react-filter-box/commit/6f16131))
+* chore: update css-loader to latest version ([82662f0](https://github.com/nhabuiduc/react-filter-box/commit/82662f0))
+* chore: update jsdom ([35dc7fe](https://github.com/nhabuiduc/react-filter-box/commit/35dc7fe))
+* chore: upgrade to latest dependencies ([6940ff6](https://github.com/nhabuiduc/react-filter-box/commit/6940ff6))
+* chore: upgrade versions ([40c0a8d](https://github.com/nhabuiduc/react-filter-box/commit/40c0a8d))
 
-* dont show autocompletion if the input is empty ([#14](https://github.com/nhabuiduc/react-filter-box/issues/14)) ([b94d3a9](https://github.com/nhabuiduc/react-filter-box/commit/b94d3a9cd9009312f95e8dcaea4e98c9436da0e4))
-## [v3.4.7](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.6...v3.4.7) (2022-09-09)
+## <small>3.4.4 (2022-07-20)</small>
 
-### :bug: Bug Fix
-
-* wrong condition on filterable content check ([d79873e](https://github.com/nhabuiduc/react-filter-box/commit/d79873e1a6959ac239dd3eadd44ee9a77a5f67ab))
-## [v3.4.6](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.5...v3.4.6) (2022-09-09)
-
-### :rocket: New Feature
-
-* add CODEOWNERS file ([486e01c](https://github.com/nhabuiduc/react-filter-box/commit/486e01caf98319eb6e004ff6e3332b8f0c78f9a5))
-
-### :bug: Bug Fix
-
-* allow spaces when validating searchable content ([#13](https://github.com/nhabuiduc/react-filter-box/issues/13)) ([bfd1a74](https://github.com/nhabuiduc/react-filter-box/commit/bfd1a743dacb51653f6a7f9453920e2ae42ab51c))
-* remove suggestion of paranthesis ([#12](https://github.com/nhabuiduc/react-filter-box/issues/12)) ([e927a39](https://github.com/nhabuiduc/react-filter-box/commit/e927a39e46f95959688fb6846779f66fb671c491))
-## [v3.4.5](https://github.com/nhabuiduc/react-filter-box/compare/v3.4.4...v3.4.5) (2022-07-25)
-
-### :house: Internal
-
-* update css-loader to latest version ([82662f0](https://github.com/nhabuiduc/react-filter-box/commit/82662f073f961cd808b8821dd9dabd2876564bd5))
-* update jsdom ([35dc7fe](https://github.com/nhabuiduc/react-filter-box/commit/35dc7fec2898fa556bd49a9ca3927aa774b48324))
-* upgrade to latest dependencies ([6940ff6](https://github.com/nhabuiduc/react-filter-box/commit/6940ff615a046ff38a7fdd6ad28b470cb7613673))
-* upgrade versions ([40c0a8d](https://github.com/nhabuiduc/react-filter-box/commit/40c0a8df0c7db93c531ed937c1ff9f7eec6174cc))
-## [v3.4.4](https://github.com/nhabuiduc/react-filter-box/compare/acd7e79e7fde96db719517526fbf99342954daf8...v3.4.4) (2022-07-20)
-
-### :rocket: New Feature
-
-* change component to fit our needs ([acd7e79](https://github.com/nhabuiduc/react-filter-box/commit/acd7e79e7fde96db719517526fbf99342954daf8))
-
-### :house: Internal
-
-* adds entry in .gitignore for yarn-error.log ([b437cf2](https://github.com/nhabuiduc/react-filter-box/commit/b437cf2820f98548c6f2e585061133d59e6a32f6))
-* adds version script in package.json ([148b896](https://github.com/nhabuiduc/react-filter-box/commit/148b896e91a6cb50d88fe3138137a70f60e79528))
-* removes yarn-error.log ([88e7d5b](https://github.com/nhabuiduc/react-filter-box/commit/88e7d5bd2b30327e189b2d813bac3b02adcdef64))
+* -> version 3.0.0 ([6d9a22c](https://github.com/nhabuiduc/react-filter-box/commit/6d9a22c))
+* add ability to custom auto complte rendering ([aea7c9b](https://github.com/nhabuiduc/react-filter-box/commit/aea7c9b))
+* add build for prod in js-example ([86e0bb5](https://github.com/nhabuiduc/react-filter-box/commit/86e0bb5))
+* Add editorConfig prop to pass config to CodeMirror ([6d58530](https://github.com/nhabuiduc/react-filter-box/commit/6d58530))
+* Add editorConfig prop to README.md ([d13c1ff](https://github.com/nhabuiduc/react-filter-box/commit/d13c1ff))
+* add example as js ([a0c5c29](https://github.com/nhabuiduc/react-filter-box/commit/a0c5c29))
+* add example image ([d7308e4](https://github.com/nhabuiduc/react-filter-box/commit/d7308e4))
+* add hot loader ([6c7890b](https://github.com/nhabuiduc/react-filter-box/commit/6c7890b))
+* add ignore typings folder ([e36e2db](https://github.com/nhabuiduc/react-filter-box/commit/e36e2db))
+* add license file ([84c2f75](https://github.com/nhabuiduc/react-filter-box/commit/84c2f75))
+* add npmignore ([36f8ead](https://github.com/nhabuiduc/react-filter-box/commit/36f8ead))
+* add style on focus and on error ([eab0092](https://github.com/nhabuiduc/react-filter-box/commit/eab0092))
+* add testing framework/handle better for auto complete ([6c53777](https://github.com/nhabuiduc/react-filter-box/commit/6c53777))
+* add tests for BaseResultProcessing ([8557311](https://github.com/nhabuiduc/react-filter-box/commit/8557311))
+* Added definition file generation to the webpack output ([789850a](https://github.com/nhabuiduc/react-filter-box/commit/789850a))
+* added hasCategory and hasOperator functions to auto complete handlers.  fixed strict mode bug and ad ([a1cefac](https://github.com/nhabuiduc/react-filter-box/commit/a1cefac))
+* Avoid dynamically compiling the grammar ([2872e2e](https://github.com/nhabuiduc/react-filter-box/commit/2872e2e))
+* Bump acorn from 5.7.3 to 5.7.4 ([defeff5](https://github.com/nhabuiduc/react-filter-box/commit/defeff5))
+* Bump acorn from 5.7.3 to 5.7.4 in /js-example ([a98900f](https://github.com/nhabuiduc/react-filter-box/commit/a98900f))
+* Bump elliptic from 6.4.1 to 6.5.3 ([7b9fcd9](https://github.com/nhabuiduc/react-filter-box/commit/7b9fcd9))
+* Bump elliptic from 6.4.1 to 6.5.3 in /js-example ([e0a01a4](https://github.com/nhabuiduc/react-filter-box/commit/e0a01a4))
+* Bump http-proxy from 1.17.0 to 1.18.1 in /js-example ([616f3e4](https://github.com/nhabuiduc/react-filter-box/commit/616f3e4))
+* Bump http-proxy from 1.18.0 to 1.18.1 ([033604e](https://github.com/nhabuiduc/react-filter-box/commit/033604e))
+* Bump lodash from 4.17.15 to 4.17.19 ([a65b5a9](https://github.com/nhabuiduc/react-filter-box/commit/a65b5a9))
+* Bump lodash from 4.17.15 to 4.17.19 in /js-example ([785e988](https://github.com/nhabuiduc/react-filter-box/commit/785e988))
+* bump up version ([c522778](https://github.com/nhabuiduc/react-filter-box/commit/c522778))
+* Bump up version ([1a5c770](https://github.com/nhabuiduc/react-filter-box/commit/1a5c770))
+* Bump up version ([51e6601](https://github.com/nhabuiduc/react-filter-box/commit/51e6601))
+* Bump up version to fix missing definition files ([27f1b71](https://github.com/nhabuiduc/react-filter-box/commit/27f1b71))
+* Bump webpack-dev-server from 3.1.10 to 3.1.11 in /js-example ([692e3b6](https://github.com/nhabuiduc/react-filter-box/commit/692e3b6))
+* Bump websocket-extensions from 0.1.3 to 0.1.4 ([bf3f21d](https://github.com/nhabuiduc/react-filter-box/commit/bf3f21d))
+* Bump websocket-extensions from 0.1.3 to 0.1.4 in /js-example ([73a5a8e](https://github.com/nhabuiduc/react-filter-box/commit/73a5a8e))
+* change npm description ([4477245](https://github.com/nhabuiduc/react-filter-box/commit/4477245))
+* convert to Typescript ([f77e600](https://github.com/nhabuiduc/react-filter-box/commit/f77e600))
+* Correct package name ([b2eefd6](https://github.com/nhabuiduc/react-filter-box/commit/b2eefd6))
+* correct typescript definition folder ([b8f2c4e](https://github.com/nhabuiduc/react-filter-box/commit/b8f2c4e))
+* create example folder ([e352a6c](https://github.com/nhabuiduc/react-filter-box/commit/e352a6c))
+* example with ok-error icon ([4656593](https://github.com/nhabuiduc/react-filter-box/commit/4656593))
+* example with ok-error icon ([45d8724](https://github.com/nhabuiduc/react-filter-box/commit/45d8724))
+* fix  security warning ([e2d2bd6](https://github.com/nhabuiduc/react-filter-box/commit/e2d2bd6))
+* fix bug with textField and valueField, update readme for basic using ([99ec2ff](https://github.com/nhabuiduc/react-filter-box/commit/99ec2ff))
+* fix demo application import error on filesystem with case-sensitivity ([c833d94](https://github.com/nhabuiduc/react-filter-box/commit/c833d94))
+* Fix error by using new react-codemirrorr2 ([c8b089f](https://github.com/nhabuiduc/react-filter-box/commit/c8b089f))
+* fix js example to use latest react-filter-box ([5b42c7b](https://github.com/nhabuiduc/react-filter-box/commit/5b42c7b))
+* Fix js-example to use correct column name with latest react-filter-box library ([62829f7](https://github.com/nhabuiduc/react-filter-box/commit/62829f7))
+* Fix potential security risk: Minimist <=1.2.5 is vulnerable to Prototype Pollution via file index.js ([3790577](https://github.com/nhabuiduc/react-filter-box/commit/3790577))
+* Fix potential security: url-parse prior to version 1.5.8 is vulnerable to Authorization Bypass Throu ([988f2f8](https://github.com/nhabuiduc/react-filter-box/commit/988f2f8))
+* including react-component keyword ([476ed81](https://github.com/nhabuiduc/react-filter-box/commit/476ed81))
+* increase npm version ([cbdae9c](https://github.com/nhabuiduc/react-filter-box/commit/cbdae9c))
+* Increase version number 3.2.0: Avoid dynamically compiling the grammar ([f8c7ff3](https://github.com/nhabuiduc/react-filter-box/commit/f8c7ff3))
+* Increase version number 3.2.0: Avoid dynamically compiling the grammar ([60b4cf6](https://github.com/nhabuiduc/react-filter-box/commit/60b4cf6))
+* Increase version; Update example with new version ([9febfcb](https://github.com/nhabuiduc/react-filter-box/commit/9febfcb))
+* init project ([2003de7](https://github.com/nhabuiduc/react-filter-box/commit/2003de7))
+* make filter invalid when an expression has an invalid category or operator ([ac2f7e4](https://github.com/nhabuiduc/react-filter-box/commit/ac2f7e4))
+* pass validation info consistently ([5dc0727](https://github.com/nhabuiduc/react-filter-box/commit/5dc0727))
+* pass validation result in change event ([a8cfad4](https://github.com/nhabuiduc/react-filter-box/commit/a8cfad4))
+* Remove debug logs ([f92c42c](https://github.com/nhabuiduc/react-filter-box/commit/f92c42c))
+* remove license file ([e88c840](https://github.com/nhabuiduc/react-filter-box/commit/e88c840))
+* remove License file in js example, and update link to point to js example ([3d22a3a](https://github.com/nhabuiduc/react-filter-box/commit/3d22a3a))
+* remove typings folder ([a514713](https://github.com/nhabuiduc/react-filter-box/commit/a514713))
+* Removed console logging from production bundle. ([dacdb76](https://github.com/nhabuiduc/react-filter-box/commit/dacdb76))
+* s/columField/columnField/g ([f1b8b88](https://github.com/nhabuiduc/react-filter-box/commit/f1b8b88))
+* s/getSugessions/getSuggestions/g ([8d832ec](https://github.com/nhabuiduc/react-filter-box/commit/8d832ec))
+* setup for npm install ([961a754](https://github.com/nhabuiduc/react-filter-box/commit/961a754))
+* strictMode prop documentation ([1780013](https://github.com/nhabuiduc/react-filter-box/commit/1780013))
+* style auto complete box ([0e07e47](https://github.com/nhabuiduc/react-filter-box/commit/0e07e47))
+* support custom control in AutoComplete box ([9696312](https://github.com/nhabuiduc/react-filter-box/commit/9696312))
+* update demo page info ([55c72ec](https://github.com/nhabuiduc/react-filter-box/commit/55c72ec))
+* Update exampe with new react-filter-box version ([69a349f](https://github.com/nhabuiduc/react-filter-box/commit/69a349f))
+* Update exampe with new react-filter-box version ([b2e7389](https://github.com/nhabuiduc/react-filter-box/commit/b2e7389))
+* update git repository to npm ([36a343d](https://github.com/nhabuiduc/react-filter-box/commit/36a343d))
+* update js example to use latest version ([a59a8e1](https://github.com/nhabuiduc/react-filter-box/commit/a59a8e1))
+* Update js-example to user latest react-filter-box ([6419ac6](https://github.com/nhabuiduc/react-filter-box/commit/6419ac6))
+* update lodash ([b758fac](https://github.com/nhabuiduc/react-filter-box/commit/b758fac))
+* update npm package ([6626f12](https://github.com/nhabuiduc/react-filter-box/commit/6626f12))
+* update npm package ([8a86f93](https://github.com/nhabuiduc/react-filter-box/commit/8a86f93))
+* update package ([c6d3fec](https://github.com/nhabuiduc/react-filter-box/commit/c6d3fec))
+* update package name to publish to @adastradev.  added test script for windows ([b0d2892](https://github.com/nhabuiduc/react-filter-box/commit/b0d2892))
+* update read me and remove console log ([ed2e33c](https://github.com/nhabuiduc/react-filter-box/commit/ed2e33c))
+* update readme ([129e871](https://github.com/nhabuiduc/react-filter-box/commit/129e871))
+* update readme ([a164438](https://github.com/nhabuiduc/react-filter-box/commit/a164438))
+* update readme ([9e8639b](https://github.com/nhabuiduc/react-filter-box/commit/9e8639b))
+* update readme file and add webpack for prod ([664b656](https://github.com/nhabuiduc/react-filter-box/commit/664b656))
+* update readme to include image ([a45672d](https://github.com/nhabuiduc/react-filter-box/commit/a45672d))
+* update readme with more information -wip ([684a653](https://github.com/nhabuiduc/react-filter-box/commit/684a653))
+* Update README.md ([9dfe9ad](https://github.com/nhabuiduc/react-filter-box/commit/9dfe9ad))
+* Update README.md ([0f9c679](https://github.com/nhabuiduc/react-filter-box/commit/0f9c679))
+* Update README.md ([628fc43](https://github.com/nhabuiduc/react-filter-box/commit/628fc43))
+* Update README.md ([f56a8d4](https://github.com/nhabuiduc/react-filter-box/commit/f56a8d4))
+* update version ([baecbc1](https://github.com/nhabuiduc/react-filter-box/commit/baecbc1))
+* upgrade all libraries to latest version ([2054377](https://github.com/nhabuiduc/react-filter-box/commit/2054377))
+* Upgrade example to use latest version ([0e09676](https://github.com/nhabuiduc/react-filter-box/commit/0e09676))
+* Upgrade libraries to latest version; Using Mocha for testing and remove karmar; remove typings ([642af0c](https://github.com/nhabuiduc/react-filter-box/commit/642af0c))
+* Upgrade lodash ([d5cc21a](https://github.com/nhabuiduc/react-filter-box/commit/d5cc21a))
+* Upgrade tslint to latest version; remove security warning of js-yaml library ([d863f74](https://github.com/nhabuiduc/react-filter-box/commit/d863f74))
+* use ts-loader instead of awesome-typescript-loader to resolve https://github.com/nhabuiduc/react-fil ([05290a6](https://github.com/nhabuiduc/react-filter-box/commit/05290a6))
+* using latest version of react-filter-box  for js-example ([5842c7a](https://github.com/nhabuiduc/react-filter-box/commit/5842c7a))
+* v3.4.4 ([92b2062](https://github.com/nhabuiduc/react-filter-box/commit/92b2062))
+* chore: adds entry in .gitignore for yarn-error.log ([b437cf2](https://github.com/nhabuiduc/react-filter-box/commit/b437cf2))
+* chore: adds version script in package.json ([148b896](https://github.com/nhabuiduc/react-filter-box/commit/148b896))
+* chore: removes yarn-error.log ([88e7d5b](https://github.com/nhabuiduc/react-filter-box/commit/88e7d5b))
+* feat: change component to fit our needs ([acd7e79](https://github.com/nhabuiduc/react-filter-box/commit/acd7e79))
